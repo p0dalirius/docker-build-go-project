@@ -17,7 +17,7 @@ This project offers a Docker-based setup for building Go projects. It comes with
 
 ## Installation
 
-You need to install [docker](https://docs.docker.com/engine/install/ubuntu/) to use this tool. Once this is done, you can build the container and install the command by typing `make install` in this repository.
+You need to install [docker](https://docs.docker.com/engine/install/ubuntu/) to use this tool. Once this is done, you can build the container and install the command `build-go-project` by typing `make install` in this repository.
 
 If you are using:
  - **Debian**: https://docs.docker.com/engine/install/debian/
