@@ -42,35 +42,20 @@ If you are using:
 
 ## Usage
 
-To use this Docker-based environment for building Go projects, follow these steps:
+Use the installed build script to compile your Go project. Navigate to your project directory that contain the `./src/` directory and run:
 
-1. **Build the Docker Image**:
-   Run the following command to build the Docker image:
-   ```sh
-   make build_docker
-   ```
+```sh
+build-go-project
+```
 
-2. **Install the Build Script**:
-   Install the build script to your local machine by running:
-   ```sh
-   make install
-   ```
+By default, it will use the current directory as the workspace, and the current OS and architecture.
 
-3. **Compile Your Go Project**:
-   Use the installed build script to compile your Go project. Navigate to your project directory and run:
-   ```sh
-   build-go-project
-   ```
-   By default, it will use the current directory as the workspace, and the current OS and architecture.
-
-4. **Specify Custom Parameters (Optional)**:
-   You can specify custom workspace, OS, and architecture using the following options:
-   ```sh
-   build-go-project -w <workspace> -O <os> -a <architecture>
-   ```
+You can also specify custom workspace, OS, and architecture using the following options:
+```sh
+build-go-project -w <workspace> -O <os> -a <architecture>
+```
 
 The compiled binaries will be placed in the `./bin/<os>/<arch>/` directory inside the workspace.
-
 
 ## Contributing
 
